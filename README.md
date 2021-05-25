@@ -5,11 +5,9 @@ Home: https://CRAN.R-project.org/package=neldermead
 
 Package license: CeCILL-2
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-neldermead-feedstock/blob/master/LICENSE.txt)
 
 Summary: Provides several direct search optimization algorithms based on the simplex method. The provided algorithms are direct search algorithms, i.e. algorithms which do not use the derivative of the cost function. They are based on the update of a simplex. The following algorithms are available: the fixed shape simplex method of Spendley, Hext and Himsworth (unconstrained optimization with a fixed shape simplex), the variable shape simplex method of Nelder and Mead (unconstrained optimization with a variable shape simplex made), and Box's complex method (constrained optimization with a variable shape simplex).
-
-
 
 Current build status
 ====================
@@ -38,6 +36,7 @@ Installing `r-neldermead` from the `conda-forge` channel can be achieved by addi
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-neldermead` can be installed with:
@@ -108,9 +107,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
