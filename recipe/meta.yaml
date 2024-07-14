@@ -1,6 +1,5 @@
 {% set version = "1.0-12" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-neldermead
@@ -13,8 +12,7 @@ source:
   sha256: a3dea2abd56452639982cd8ae895060eefbff9bfbec6efcc6671ac81b39d4273
 
 build:
-  merge_build_host: true  # [win]
-  number: 2
+  number: 3
   noarch: generic
   rpaths:
     - lib/R/lib/
