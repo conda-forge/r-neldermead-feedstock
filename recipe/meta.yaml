@@ -1,4 +1,4 @@
-{% set version = "1.0-12" %}
+{% set version = "1.0-13" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/neldermead_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/neldermead/neldermead_{{ version }}.tar.gz
-  sha256: a3dea2abd56452639982cd8ae895060eefbff9bfbec6efcc6671ac81b39d4273
+  sha256: e7199002ffae4a7f272dc5c74a244afdec31505c2e6a23a2383af33ed6f4bf96
 
 build:
-  number: 4
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -38,8 +38,8 @@ test:
 about:
   home: https://CRAN.R-project.org/package=neldermead
   license: CeCILL-2
-  summary: "Provides several direct search optimization algorithms based on the simplex method. The provided algorithms are direct search algorithms, i.e. algorithms which do not use the derivative of the cost function. They are based on the update of a simplex. The following algorithms are available: the fixed shape simplex\
-    \ method of Spendley, Hext and Himsworth (unconstrained optimization with a fixed shape simplex), the variable shape simplex method of Nelder and Mead (unconstrained optimization with a variable shape simplex made), and Box's complex method (constrained optimization with a variable shape simplex)."
+  summary: "Provides several direct search optimization algorithms based on the simplex method. The provided algorithms are direct search algorithms, i.e. algorithms which do not use the derivative of the cost function. They are based on the update of a simplex. The following algorithms are available: the fixed shape simplex
+    method of Spendley, Hext and Himsworth (unconstrained optimization with a fixed shape simplex), the variable shape simplex method of Nelder and Mead (unconstrained optimization with a variable shape simplex made), and Box's complex method (constrained optimization with a variable shape simplex)."
   license_family: OTHER
   license_file: Licence_CeCILL_V2-en.txt
 
